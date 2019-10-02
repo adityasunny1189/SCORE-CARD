@@ -8,12 +8,52 @@
         background-color : darkslategray;
         text-align : center;
       }
+      footer {
+        margin-top : 50px;
+      }
+      form {
+        height : 300px;
+        width : 300px;
+        background-color : grey;
+        margin : 10% 40% 10% 40%;
+      }
+      .first
+      {
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.7);
+          position: absolute;
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: none;
+      }
+      .second
+      {
+          width : 200px;
+          height : 200px;
+          background-color: white;
+          border-radius: 4px;
+          text-align: center;
+          padding: 20px;
+          position: relative;
+      }
+      .close
+      {
+          position: absolute;
+          top: 0;
+          right: 14px;
+          font-size: 42px;
+          transform: rotate(45deg);
+          cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <h1><u>BASKETBALL GAME SCORES</u></h1>
     <form class="frm" action="index.html" method="post">
-      <label for="">TEAM 1</label><br><br>
+      <label class="tm1" for="">TEAM 1</label><br><br>
       <input type="number" required class="t1rd1" placeholder="ROUND 1" name="" value="">
       <input type="number" required class="t1rd2" placeholder="ROUND 2" name="" value="">
       <input type="number" required class="t1rd3" placeholder="ROUND 3" name="" value=""><br><br>
@@ -23,5 +63,16 @@
       <input type="number" required class="t2rd3" placeholder="ROUND 3" name="" value=""><br><br>
       <button type="button" class="but" name="button">FINAL SCORE</button>
     </form>
+
+    <div class="first">
+      <div class="second">
+        <div class="close">+</div>
+        <h1>FINAL SCORE</h1><br><br>
+          <p class="content">CONTENT</p>
+        </div>
+    </div>
+
+    <footer>&copy 2019 ADITYA PATHAK</footer>
+    <script src="index.js"></script>
   </body>
 </html>
