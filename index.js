@@ -1,10 +1,11 @@
 document.querySelector("button").addEventListener("click" , function () {
-  var t1sc1 = document.querySelector(".t1rd1").value;
-  var t1sc2 = document.querySelector(".t1rd2").value;
-  var t1sc3 = document.querySelector(".t1rd3").value;
-  var t2sc1 = document.querySelector(".t2rd1").value;
-  var t2sc2 = document.querySelector(".t2rd2").value;
-  var t2sc3 = document.querySelector(".t2rd3").value;
+  var t1sc1 = Number(document.querySelector(".t1rd1").value);
+  var t1sc2 = Number(document.querySelector(".t1rd2").value);
+  var t1sc3 = Number(document.querySelector(".t1rd3").value);
+  var t2sc1 = Number(document.querySelector(".t2rd1").value);
+  var t2sc2 = Number(document.querySelector(".t2rd2").value);
+  var t2sc3 = Number(document.querySelector(".t2rd3").value);
+  console.log(typeof(t1sc1));
   var t1_total_scr = t1sc1 + t1sc2 + t1sc3;
   var t2_total_scr = t2sc1 + t2sc2 + t2sc3;
   var t1avgscr = t1_total_scr/3;
